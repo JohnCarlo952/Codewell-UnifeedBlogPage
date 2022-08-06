@@ -1,0 +1,103 @@
+/* General Styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Header-Nav Styles */
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+}
+header nav {
+  margin: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+.nav-container ul {
+  padding: 30px 40px;
+}
+.nav-container ul li {
+  display: inline-block;
+  margin: 1em;
+}
+.nav-container ul li a {
+  text-decoration: none;
+  color: #656565;
+  font-weight: 500;
+}
+.nav-container ul li a:hover {
+  color: #000;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+.sub-button {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px;
+  background-color: #ee7c0d;
+  color: #000;
+  border-radius: 3px;
+}
+.sub-button:hover {
+  box-shadow: 0 0 12px;
+}
+
+/* Article style */
+
+.article-content {
+  margin: 0 7%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-content .col .article-img {
+  width: 400px;
+  height: 310px;
+}
+
+.article-content .col > h1 {
+  font-size: 43px;
+}
+.article-content .col > p {
+  font-size: 23px;
+  margin-top: 12px;
+  color: #656565;
+}
+
+/* Article Owner Styles */
+
+.article-author {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  margin-top: 3rem;
+}
+.article-author .article-avatar {
+  width: 60px;
+  height: 60px;
+}
+.author .name {
+  color: #000;
+  font-weight: 600;
+}
+.author .position {
+  margin-top: 5px;
+  color: #656565;
+}
