@@ -21,7 +21,7 @@ header {
   background: #fff;
 }
 header nav {
-  margin: 0 7%;
+  margin: 0 4%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,15 +54,19 @@ header nav {
   background-color: #ee7c0d;
   color: #000;
   border-radius: 3px;
+  width: 100px;
 }
 .sub-button:hover {
   box-shadow: 0 0 12px;
+}
+.Hamburger {
+  display: none;
 }
 
 /* Article style */
 
 .article-content {
-  margin: 0 7%;
+  margin: 0 4%;
   display: flex;
   justify-content: space-between;
 }
@@ -80,14 +84,35 @@ header nav {
   margin-top: 12px;
   color: #656565;
 }
+.article-content-2 {
+  margin: 0 4%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.article-content-2 .col-2 > h2 {
+  margin-top: 12px;
+  font-size: 36px;
+  font-weight: 600;
+  color: #000;
+}
+.article-content-2 .col-2 > p {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #656565;
+}
 
+.article-content-2 .col-2 > img {
+  width: 350px;
+  height: 200px;
+}
 /* Article Owner Styles */
 
 .article-author {
   display: flex;
   align-items: center;
   column-gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 .article-author .article-avatar {
   width: 60px;
@@ -100,4 +125,80 @@ header nav {
 .author .position {
   margin-top: 5px;
   color: #656565;
+}
+
+/* footer */
+footer {
+  margin: 0 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  color: #656565;
+  font-weight: 600;
+}
+
+/* responsiveness */
+@media only screen and (max-width: 768px) {
+  .article-content {
+    width: 90%;
+    flex-direction: column;
+  }
+  .article-content .col .article-img {
+    width: 100%;
+  }
+  .article-content .col > h1 {
+    margin-top: 20px;
+    font-size: 35px;
+  }
+  .article-content .col > p {
+    font-size: 18px;
+  }
+  .article-content-2 {
+    width: 90%;
+    flex-direction: column;
+  }
+  .article-content-2 .col-2 > img {
+    width: 100%;
+  }
+  .article-content-2 .col-2 > h2 {
+    font-size: 50px;
+  }
+  .article-content-2 .col-2 > p {
+    font-size: 20px;
+  }
+  footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 424px) {
+  .Hamburger {
+    display: block;
+  }
+  nav {
+    padding: 40px 0;
+  }
+  .nav-container {
+    background-color: #000;
+    position: absolute;
+    text-align: center;
+    flex-direction: column;
+    width: 90%;
+    top: -600px;
+  }
+  .article-author {
+    margin-bottom: 40px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    pad
+  }
+  footer p
+  {
+    padding: 25px 0 25px 0;
+  }
 }
